@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @word.owner_id %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @word.target %>
+</p>
+
+<p>
+  <strong>Word class:</strong>
+  <%= @word.word_class %>
+</p>
+
+<p>
+  <strong>Target sample 0:</strong>
+  <%= @word.target_sample_0 %>
+</p>
+
+<p>
+  <strong>Target sample 1:</strong>
+  <%= @word.target_sample_1 %>
+</p>
+
+<p>
+  <strong>Target sample 2:</strong>
+  <%= @word.target_sample_2 %>
+</p>
+
+<p>
+  <strong>Native:</strong>
+  <%= @word.native %>
+</p>
+
+<p>
+  <strong>Native sample 0:</strong>
+  <%= @word.native_sample_0 %>
+</p>
+
+<p>
+  <strong>Native sample 1:</strong>
+  <%= @word.native_sample_1 %>
+</p>
+
+<p>
+  <strong>Native sample 2:</strong>
+  <%= @word.native_sample_2 %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @word.created %>
+</p>
+
+<p>
+  <strong>Learn state:</strong>
+  <%= @word.learn_state %>
+</p>
+
+<p>
+  <strong>Next schedule:</strong>
+  <%= @word.next_schedule %>
+</p>
+
+<p>
+  <strong>Last schedule:</strong>
+  <%= @word.last_schedule %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @word.image %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

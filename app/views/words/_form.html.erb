@@ -1,0 +1,92 @@
+<%= form_with(model: word, local: true) do |form| %>
+  <% if word.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(word.errors.count, "error") %> prohibited this word from being saved:</h2>
+
+      <ul>
+      <% word.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :owner_id %>
+    <%= form.number_field :owner_id, id: :word_owner_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :target %>
+    <%= form.text_field :target, id: :word_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :word_class %>
+    <%= form.text_field :word_class, id: :word_word_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :target_sample_0 %>
+    <%= form.text_area :target_sample_0, id: :word_target_sample_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :target_sample_1 %>
+    <%= form.text_area :target_sample_1, id: :word_target_sample_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :target_sample_2 %>
+    <%= form.text_area :target_sample_2, id: :word_target_sample_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :native %>
+    <%= form.text_field :native, id: :word_native %>
+  </div>
+
+  <div class="field">
+    <%= form.label :native_sample_0 %>
+    <%= form.text_area :native_sample_0, id: :word_native_sample_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :native_sample_1 %>
+    <%= form.text_area :native_sample_1, id: :word_native_sample_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :native_sample_2 %>
+    <%= form.text_area :native_sample_2, id: :word_native_sample_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created %>
+    <%= form.date_select :created, id: :word_created %>
+  </div>
+
+  <div class="field">
+    <%= form.label :learn_state %>
+    <%= form.number_field :learn_state, id: :word_learn_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :next_schedule %>
+    <%= form.date_select :next_schedule, id: :word_next_schedule %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_schedule %>
+    <%= form.date_select :last_schedule, id: :word_last_schedule %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :word_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

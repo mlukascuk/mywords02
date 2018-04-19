@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_id: 1
+  target: MyString
+  word_class: MyString
+  target_sample_0: MyText
+  target_sample_1: MyText
+  target_sample_2: MyText
+  native: MyString
+  native_sample_0: MyText
+  native_sample_1: MyText
+  native_sample_2: MyText
+  created: 2018-04-19
+  learn_state: 1
+  next_schedule: 2018-04-19
+  last_schedule: 2018-04-19
+  image: MyString
+
+two:
+  owner_id: 1
+  target: MyString
+  word_class: MyString
+  target_sample_0: MyText
+  target_sample_1: MyText
+  target_sample_2: MyText
+  native: MyString
+  native_sample_0: MyText
+  native_sample_1: MyText
+  native_sample_2: MyText
+  created: 2018-04-19
+  learn_state: 1
+  next_schedule: 2018-04-19
+  last_schedule: 2018-04-19
+  image: MyString
